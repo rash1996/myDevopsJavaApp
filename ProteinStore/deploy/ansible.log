@@ -1,0 +1,316 @@
+2019-08-25 19:00:38,543 p=4872 u=osgdev |  PLAY [Create Container] ********************************************************
+2019-08-25 19:00:38,556 p=4872 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-25 19:00:39,432 p=4872 u=osgdev |  ok: [localhost]
+2019-08-25 19:00:39,439 p=4872 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-25 19:00:40,064 p=4872 u=osgdev |  changed: [localhost]
+2019-08-25 19:00:40,071 p=4872 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-25 19:00:58,701 p=4872 u=osgdev |  changed: [localhost]
+2019-08-25 19:00:58,721 p=4872 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-25 19:01:00,606 p=4872 u=osgdev |  changed: [localhost]
+2019-08-25 19:01:00,636 p=4872 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-25 19:01:01,901 p=4872 u=osgdev |  changed: [localhost]
+2019-08-25 19:01:01,903 p=4872 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-25 19:01:01,905 p=4872 u=osgdev |  localhost                  : ok=5    changed=4    unreachable=0    failed=0   
+2019-08-27 15:48:50,413 p=31477 u=osgdev |  ERROR! the playbook: ansible-deploy.yml could not be found
+2019-08-27 15:49:12,577 p=31965 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 15:49:12,696 p=31965 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 15:49:14,371 p=31965 u=osgdev |  ok: [localhost]
+2019-08-27 15:49:14,381 p=31965 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 15:49:19,334 p=31965 u=osgdev |  changed: [localhost]
+2019-08-27 15:49:19,352 p=31965 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 15:50:07,068 p=31965 u=osgdev |   [WARNING]: Consider using 'become', 'become_method', and 'become_user' rather
+than running sudo
+
+2019-08-27 15:50:07,070 p=31965 u=osgdev |  changed: [localhost]
+2019-08-27 15:50:07,093 p=31965 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 15:50:09,758 p=31965 u=osgdev |  changed: [localhost]
+2019-08-27 15:50:09,779 p=31965 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 15:50:12,021 p=31965 u=osgdev |  changed: [localhost]
+2019-08-27 15:50:12,039 p=31965 u=osgdev |  TASK [Prometheus container metrics examine] ************************************
+2019-08-27 15:50:12,714 p=31965 u=osgdev |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (docker_container) module: container_name,depends_on Supported parameters include: api_version,auto_remove,blkio_weight,cacert_path,capabilities,cert_path,cleanup,command,cpu_period,cpu_quota,cpu_shares,cpuset_cpus,cpuset_mems,debug,detach,devices,dns_opts,dns_search_domains,dns_servers,docker_host,entrypoint,env,env_file,etc_hosts,exposed_ports,filter_logger,force_kill,groups,hostname,ignore_image,image,interactive,ipc_mode,keep_volumes,kernel_memory,key_path,kill_signal,labels,links,log_driver,log_options,mac_address,memory,memory_reservation,memory_swap,memory_swappiness,name,network_mode,networks,oom_killer,oom_score_adj,paused,pid_mode,privileged,published_ports,pull,purge_networks,read_only,recreate,restart,restart_policy,restart_retries,security_opts,shm_size,ssl_version,state,stop_signal,stop_timeout,sysctls,timeout,tls,tls_hostname,tls_verify,tmpfs,trust_image_content,tty,ulimits,user,uts,volume_driver,volumes,volumes_from,working_dir"}
+2019-08-27 15:50:12,719 p=31965 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 15:50:12,720 p=31965 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 15:50:12,720 p=31965 u=osgdev |  localhost                  : ok=5    changed=4    unreachable=0    failed=1   
+2019-08-27 15:51:01,879 p=2562 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 15:51:01,950 p=2562 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 15:51:03,329 p=2562 u=osgdev |  ok: [localhost]
+2019-08-27 15:51:03,337 p=2562 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 15:51:04,140 p=2562 u=osgdev |  changed: [localhost]
+2019-08-27 15:51:04,149 p=2562 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 15:51:08,074 p=2562 u=osgdev |  changed: [localhost]
+2019-08-27 15:51:08,121 p=2562 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 15:51:09,175 p=2562 u=osgdev |  ok: [localhost]
+2019-08-27 15:51:09,185 p=2562 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 15:51:09,667 p=2562 u=osgdev |  ok: [localhost]
+2019-08-27 15:51:09,675 p=2562 u=osgdev |  TASK [Prometheus container metrics examine] ************************************
+2019-08-27 15:51:10,124 p=2562 u=osgdev |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (docker_container) module: container_name,depends_on Supported parameters include: api_version,auto_remove,blkio_weight,cacert_path,capabilities,cert_path,cleanup,command,cpu_period,cpu_quota,cpu_shares,cpuset_cpus,cpuset_mems,debug,detach,devices,dns_opts,dns_search_domains,dns_servers,docker_host,entrypoint,env,env_file,etc_hosts,exposed_ports,filter_logger,force_kill,groups,hostname,ignore_image,image,interactive,ipc_mode,keep_volumes,kernel_memory,key_path,kill_signal,labels,links,log_driver,log_options,mac_address,memory,memory_reservation,memory_swap,memory_swappiness,name,network_mode,networks,oom_killer,oom_score_adj,paused,pid_mode,privileged,published_ports,pull,purge_networks,read_only,recreate,restart,restart_policy,restart_retries,security_opts,shm_size,ssl_version,state,stop_signal,stop_timeout,sysctls,timeout,tls,tls_hostname,tls_verify,tmpfs,trust_image_content,tty,ulimits,user,uts,volume_driver,volumes,volumes_from,working_dir"}
+2019-08-27 15:51:10,128 p=2562 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 15:51:10,128 p=2562 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 15:51:10,128 p=2562 u=osgdev |  localhost                  : ok=5    changed=2    unreachable=0    failed=1   
+2019-08-27 15:51:37,554 p=3556 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 15:51:37,625 p=3556 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 15:51:38,965 p=3556 u=osgdev |  ok: [localhost]
+2019-08-27 15:51:38,976 p=3556 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 15:51:39,642 p=3556 u=osgdev |  changed: [localhost]
+2019-08-27 15:51:39,654 p=3556 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 15:51:44,840 p=3556 u=osgdev |  changed: [localhost]
+2019-08-27 15:51:44,849 p=3556 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 15:51:45,585 p=3556 u=osgdev |  ok: [localhost]
+2019-08-27 15:51:45,593 p=3556 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 15:51:46,151 p=3556 u=osgdev |  ok: [localhost]
+2019-08-27 15:51:46,165 p=3556 u=osgdev |  TASK [Prometheus container metrics examine] ************************************
+2019-08-27 15:51:46,664 p=3556 u=osgdev |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (docker_container) module: container_name Supported parameters include: api_version,auto_remove,blkio_weight,cacert_path,capabilities,cert_path,cleanup,command,cpu_period,cpu_quota,cpu_shares,cpuset_cpus,cpuset_mems,debug,detach,devices,dns_opts,dns_search_domains,dns_servers,docker_host,entrypoint,env,env_file,etc_hosts,exposed_ports,filter_logger,force_kill,groups,hostname,ignore_image,image,interactive,ipc_mode,keep_volumes,kernel_memory,key_path,kill_signal,labels,links,log_driver,log_options,mac_address,memory,memory_reservation,memory_swap,memory_swappiness,name,network_mode,networks,oom_killer,oom_score_adj,paused,pid_mode,privileged,published_ports,pull,purge_networks,read_only,recreate,restart,restart_policy,restart_retries,security_opts,shm_size,ssl_version,state,stop_signal,stop_timeout,sysctls,timeout,tls,tls_hostname,tls_verify,tmpfs,trust_image_content,tty,ulimits,user,uts,volume_driver,volumes,volumes_from,working_dir"}
+2019-08-27 15:51:46,667 p=3556 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 15:51:46,668 p=3556 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 15:51:46,668 p=3556 u=osgdev |  localhost                  : ok=5    changed=2    unreachable=0    failed=1   
+2019-08-27 15:52:08,798 p=4427 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 15:52:08,837 p=4427 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 15:52:09,954 p=4427 u=osgdev |  ok: [localhost]
+2019-08-27 15:52:09,962 p=4427 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 15:52:10,586 p=4427 u=osgdev |  changed: [localhost]
+2019-08-27 15:52:10,597 p=4427 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 15:52:13,856 p=4427 u=osgdev |  changed: [localhost]
+2019-08-27 15:52:13,866 p=4427 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 15:52:14,674 p=4427 u=osgdev |  ok: [localhost]
+2019-08-27 15:52:14,685 p=4427 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 15:52:15,221 p=4427 u=osgdev |  ok: [localhost]
+2019-08-27 15:52:15,238 p=4427 u=osgdev |  TASK [Prometheus container metrics examine] ************************************
+2019-08-27 15:52:16,566 p=4427 u=osgdev |  changed: [localhost]
+2019-08-27 15:52:16,569 p=4427 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 15:52:16,569 p=4427 u=osgdev |  localhost                  : ok=6    changed=3    unreachable=0    failed=0   
+2019-08-27 16:03:22,429 p=19882 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************************************
+2019-08-27 16:03:22,492 p=19882 u=osgdev |  TASK [Gathering Facts] *********************************************************************************
+2019-08-27 16:03:23,631 p=19882 u=osgdev |  ok: [localhost]
+2019-08-27 16:03:23,638 p=19882 u=osgdev |  TASK [Get latest Artifact] *****************************************************************************
+2019-08-27 16:03:24,962 p=19882 u=osgdev |  changed: [localhost]
+2019-08-27 16:03:24,973 p=19882 u=osgdev |  TASK [Create the docker image] *************************************************************************
+2019-08-27 16:03:29,761 p=19882 u=osgdev |  changed: [localhost]
+2019-08-27 16:03:29,772 p=19882 u=osgdev |  TASK [ProteinStore web container] **********************************************************************
+2019-08-27 16:03:31,223 p=19882 u=osgdev |  changed: [localhost]
+2019-08-27 16:03:31,233 p=19882 u=osgdev |  TASK [cAdvisor web container] **************************************************************************
+2019-08-27 16:03:32,612 p=19882 u=osgdev |  changed: [localhost]
+2019-08-27 16:03:32,624 p=19882 u=osgdev |  TASK [Prometheus container metrics examine] ************************************************************
+2019-08-27 16:03:34,494 p=19882 u=osgdev |  changed: [localhost]
+2019-08-27 16:03:34,498 p=19882 u=osgdev |  PLAY RECAP *********************************************************************************************
+2019-08-27 16:03:34,502 p=19882 u=osgdev |  localhost                  : ok=6    changed=5    unreachable=0    failed=0   
+2019-08-27 18:25:07,049 p=12509 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 18:25:07,366 p=12509 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 18:25:11,279 p=12509 u=osgdev |  ok: [localhost]
+2019-08-27 18:25:35,232 p=12509 u=osgdev |  fatal: [10.199.9.37]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Host key verification failed.\r\n", "unreachable": true}
+2019-08-27 18:25:35,281 p=12509 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 18:25:40,955 p=12509 u=osgdev |  changed: [localhost]
+2019-08-27 18:25:41,000 p=12509 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 18:28:33,740 p=16869 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 18:28:33,844 p=16869 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 18:28:35,026 p=16869 u=osgdev |  fatal: [10.199.9.37]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).\r\n", "unreachable": true}
+2019-08-27 18:28:36,624 p=16869 u=osgdev |  ok: [localhost]
+2019-08-27 18:28:36,659 p=16869 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 18:28:39,358 p=16869 u=osgdev |  changed: [localhost]
+2019-08-27 18:28:39,385 p=16869 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 18:28:44,087 p=16869 u=osgdev |   [ERROR]: User interrupted execution
+
+2019-08-27 18:30:23,395 p=19250 u=osgdev |  10.199.9.37 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).\r\n", 
+    "unreachable": true
+}
+2019-08-27 18:30:23,429 p=19250 u=osgdev |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-08-27 18:34:17,176 p=24216 u=osgdev |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-08-27 18:34:18,873 p=24216 u=osgdev |  10.199.9.37 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-08-27 18:34:28,628 p=24504 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 18:34:28,658 p=24504 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 18:34:30,346 p=24504 u=osgdev |  ok: [localhost]
+2019-08-27 18:34:30,710 p=24504 u=osgdev |  ok: [10.199.9.37]
+2019-08-27 18:34:30,729 p=24504 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 18:34:31,436 p=24504 u=osgdev |  fatal: [10.199.9.37]: FAILED! => {"changed": true, "cmd": "./getArtifact.sh", "delta": "0:00:00.022170", "end": "2019-08-27 18:33:44.872738", "msg": "non-zero return code", "rc": 127, "start": "2019-08-27 18:33:44.850568", "stderr": "/bin/sh: 1: ./getArtifact.sh: not found", "stderr_lines": ["/bin/sh: 1: ./getArtifact.sh: not found"], "stdout": "", "stdout_lines": []}
+2019-08-27 18:34:31,991 p=24504 u=osgdev |  changed: [localhost]
+2019-08-27 18:34:32,034 p=24504 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 18:34:36,766 p=24504 u=osgdev |  changed: [localhost]
+2019-08-27 18:34:36,781 p=24504 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 18:34:39,641 p=24504 u=osgdev |  changed: [localhost]
+2019-08-27 18:34:39,658 p=24504 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 18:34:41,014 p=24504 u=osgdev |  changed: [localhost]
+2019-08-27 18:34:41,017 p=24504 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 18:34:41,017 p=24504 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 18:34:41,017 p=24504 u=osgdev |  10.199.9.37                : ok=1    changed=0    unreachable=0    failed=1   
+2019-08-27 18:34:41,018 p=24504 u=osgdev |  localhost                  : ok=5    changed=4    unreachable=0    failed=0   
+2019-08-27 18:44:42,785 p=6024 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 18:44:42,840 p=6024 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 18:44:44,623 p=6024 u=osgdev |  ok: [localhost]
+2019-08-27 18:44:46,026 p=6024 u=osgdev |  ok: [10.199.9.37]
+2019-08-27 18:44:46,039 p=6024 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 18:44:47,432 p=6024 u=osgdev |  changed: [localhost]
+2019-08-27 18:44:47,689 p=6024 u=osgdev |  changed: [10.199.9.37]
+2019-08-27 18:44:47,721 p=6024 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 18:44:48,369 p=6024 u=osgdev |  fatal: [10.199.9.37]: FAILED! => {"changed": true, "cmd": ["docker", "build", "-t", "storeapp:latest", "."], "delta": "0:00:00.074552", "end": "2019-08-27 18:44:01.836203", "msg": "non-zero return code", "rc": 1, "start": "2019-08-27 18:44:01.761651", "stderr": "unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/osgdev/Dockerfile: no such file or directory", "stderr_lines": ["unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/osgdev/Dockerfile: no such file or directory"], "stdout": "", "stdout_lines": []}
+2019-08-27 18:44:53,516 p=6024 u=osgdev |  changed: [localhost]
+2019-08-27 18:44:53,540 p=6024 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 18:44:54,664 p=6024 u=osgdev |  ok: [localhost]
+2019-08-27 18:44:54,675 p=6024 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 18:44:55,244 p=6024 u=osgdev |  ok: [localhost]
+2019-08-27 18:44:55,250 p=6024 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 18:44:55,251 p=6024 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 18:44:55,251 p=6024 u=osgdev |  10.199.9.37                : ok=2    changed=1    unreachable=0    failed=1   
+2019-08-27 18:44:55,251 p=6024 u=osgdev |  localhost                  : ok=5    changed=2    unreachable=0    failed=0   
+2019-08-27 18:49:31,235 p=12733 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 18:49:31,277 p=12733 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 18:49:32,700 p=12733 u=osgdev |  ok: [localhost]
+2019-08-27 18:49:34,626 p=12733 u=osgdev |  ok: [10.199.9.37]
+2019-08-27 18:49:34,634 p=12733 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 18:49:35,528 p=12733 u=osgdev |  changed: [localhost]
+2019-08-27 18:49:35,955 p=12733 u=osgdev |  changed: [10.199.9.37]
+2019-08-27 18:49:35,971 p=12733 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 18:49:36,521 p=12733 u=osgdev |  fatal: [10.199.9.37]: FAILED! => {"changed": true, "cmd": ["docker", "build", "-t", "storeapp:latest", "."], "delta": "0:00:00.102984", "end": "2019-08-27 18:48:49.978160", "msg": "non-zero return code", "rc": 1, "start": "2019-08-27 18:48:49.875176", "stderr": "error checking context: 'can't stat '/home/osgdev/.cache/dconf''.", "stderr_lines": ["error checking context: 'can't stat '/home/osgdev/.cache/dconf''."], "stdout": "", "stdout_lines": []}
+2019-08-27 18:49:41,710 p=12733 u=osgdev |  changed: [localhost]
+2019-08-27 18:49:41,739 p=12733 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 18:49:42,879 p=12733 u=osgdev |  ok: [localhost]
+2019-08-27 18:49:42,900 p=12733 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 18:49:43,462 p=12733 u=osgdev |  ok: [localhost]
+2019-08-27 18:49:43,465 p=12733 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 18:49:43,466 p=12733 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 18:49:43,467 p=12733 u=osgdev |  10.199.9.37                : ok=2    changed=1    unreachable=0    failed=1   
+2019-08-27 18:49:43,467 p=12733 u=osgdev |  localhost                  : ok=5    changed=2    unreachable=0    failed=0   
+2019-08-27 18:52:10,490 p=16314 u=osgdev |  PLAY [Deploying and monitoring the web-application] ****************************
+2019-08-27 18:52:10,568 p=16314 u=osgdev |  TASK [Gathering Facts] *********************************************************
+2019-08-27 18:52:12,065 p=16314 u=osgdev |  ok: [localhost]
+2019-08-27 18:52:13,906 p=16314 u=osgdev |  ok: [10.199.9.37]
+2019-08-27 18:52:13,938 p=16314 u=osgdev |  TASK [Get latest Artifact] *****************************************************
+2019-08-27 18:52:15,025 p=16314 u=osgdev |  changed: [localhost]
+2019-08-27 18:52:15,295 p=16314 u=osgdev |  changed: [10.199.9.37]
+2019-08-27 18:52:15,341 p=16314 u=osgdev |  TASK [Create the docker image] *************************************************
+2019-08-27 18:52:15,968 p=16314 u=osgdev |  fatal: [10.199.9.37]: FAILED! => {"changed": true, "cmd": ["docker", "build", "-t", "storeapp:latest", "."], "delta": "0:00:00.037206", "end": "2019-08-27 18:51:29.433331", "msg": "non-zero return code", "rc": 1, "start": "2019-08-27 18:51:29.396125", "stderr": "error checking context: 'can't stat '/home/osgdev/.cache/dconf''.", "stderr_lines": ["error checking context: 'can't stat '/home/osgdev/.cache/dconf''."], "stdout": "", "stdout_lines": []}
+2019-08-27 18:52:19,950 p=16314 u=osgdev |  changed: [localhost]
+2019-08-27 18:52:19,965 p=16314 u=osgdev |  TASK [ProteinStore web container] **********************************************
+2019-08-27 18:52:20,910 p=16314 u=osgdev |  ok: [localhost]
+2019-08-27 18:52:20,919 p=16314 u=osgdev |  TASK [cAdvisor web container] **************************************************
+2019-08-27 18:52:21,469 p=16314 u=osgdev |  ok: [localhost]
+2019-08-27 18:52:21,475 p=16314 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 18:52:21,476 p=16314 u=osgdev |  PLAY RECAP *********************************************************************
+2019-08-27 18:52:21,476 p=16314 u=osgdev |  10.199.9.37                : ok=2    changed=1    unreachable=0    failed=1   
+2019-08-27 18:52:21,476 p=16314 u=osgdev |  localhost                  : ok=5    changed=2    unreachable=0    failed=0   
+2019-08-27 18:55:53,239 p=21270 u=osgdev |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  hosts: all
+  - name: ProteinStore web container
+  ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: while parsing a block mapping
+  in "<unicode string>", line 9, column 3
+did not find expected key
+  in "<unicode string>", line 11, column 3
+2019-08-27 19:52:09,528 p=29782 u=osgdev |  ERROR! Syntax Error while loading YAML.
+
+
+The error appears to have been in '/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.yml': line 26, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: cAdvisor web container
+  ^ here
+
+exception type: <class 'yaml.parser.ParserError'>
+exception: while parsing a block mapping
+  in "<unicode string>", line 1, column 3
+did not find expected key
+  in "<unicode string>", line 26, column 3
+2019-08-27 19:53:15,818 p=31232 u=osgdev |   [WARNING]: While constructing a mapping from /home/osgdev/Desktop/capstoneTest/build/ansible_deploy.yml, line 1, column 3, found a duplicate
+dict key (tasks). Using last defined value only.
+
+2019-08-27 19:53:15,822 p=31232 u=osgdev |  ERROR! 'services' is not a valid attribute for a Play
+
+The error appears to have been in '/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Deploying and monitoring the web-application
+  ^ here
+
+2019-08-27 19:56:44,278 p=3348 u=osgdev |   [WARNING]: While constructing a mapping from /home/osgdev/Desktop/capstoneTest/build/ansible_deploy.yml, line 1, column 3, found a duplicate
+dict key (tasks). Using last defined value only.
+
+2019-08-27 19:56:44,869 p=3348 u=osgdev |  PLAY [Deploying and monitoring the web-application] ******************************************************************************************
+2019-08-27 19:56:44,917 p=3348 u=osgdev |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-08-27 19:56:46,252 p=3348 u=osgdev |  ok: [localhost]
+2019-08-27 19:56:46,272 p=3348 u=osgdev |  TASK [cAdvisor web container] ****************************************************************************************************************
+2019-08-27 19:56:48,152 p=3348 u=osgdev |  changed: [localhost]
+2019-08-27 19:56:48,159 p=3348 u=osgdev |  PLAY RECAP ***********************************************************************************************************************************
+2019-08-27 19:56:48,160 p=3348 u=osgdev |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2019-08-27 19:57:38,280 p=4805 u=osgdev |  PLAY [Deploying and monitoring the web-application] ******************************************************************************************
+2019-08-27 19:57:38,300 p=4805 u=osgdev |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-08-27 19:57:39,458 p=4805 u=osgdev |  ok: [localhost]
+2019-08-27 19:57:39,466 p=4805 u=osgdev |  TASK [Get latest Artifact] *******************************************************************************************************************
+2019-08-27 19:57:40,533 p=4805 u=osgdev |  changed: [localhost]
+2019-08-27 19:57:40,542 p=4805 u=osgdev |  TASK [Create the docker image] ***************************************************************************************************************
+2019-08-27 19:57:45,623 p=4805 u=osgdev |  changed: [localhost]
+2019-08-27 19:57:45,650 p=4805 u=osgdev |  TASK [Build the image] ***********************************************************************************************************************
+2019-08-27 19:57:46,055 p=4805 u=osgdev |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": ["docker", "stack", "deploy", "-c", "docker_compose.yml", "storeapp1:latest"], "delta": "0:00:00.051595", "end": "2019-08-27 19:57:46.026116", "msg": "non-zero return code", "rc": 1, "start": "2019-08-27 19:57:45.974521", "stderr": "yaml: line 16: did not find expected key", "stderr_lines": ["yaml: line 16: did not find expected key"], "stdout": "", "stdout_lines": []}
+2019-08-27 19:57:46,075 p=4805 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 19:57:46,075 p=4805 u=osgdev |  PLAY RECAP ***********************************************************************************************************************************
+2019-08-27 19:57:46,075 p=4805 u=osgdev |  localhost                  : ok=3    changed=2    unreachable=0    failed=1   
+2019-08-27 20:00:35,504 p=9143 u=osgdev |  PLAY [Deploying and monitoring the web-application] ******************************************************************************************
+2019-08-27 20:00:35,565 p=9143 u=osgdev |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-08-27 20:00:37,010 p=9143 u=osgdev |  ok: [localhost]
+2019-08-27 20:00:37,019 p=9143 u=osgdev |  TASK [Get latest Artifact] *******************************************************************************************************************
+2019-08-27 20:00:38,076 p=9143 u=osgdev |  changed: [localhost]
+2019-08-27 20:00:38,084 p=9143 u=osgdev |  TASK [Create the docker image] ***************************************************************************************************************
+2019-08-27 20:00:44,256 p=9143 u=osgdev |  changed: [localhost]
+2019-08-27 20:00:44,285 p=9143 u=osgdev |  TASK [Build the image] ***********************************************************************************************************************
+2019-08-27 20:00:44,650 p=9143 u=osgdev |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": ["docker", "stack", "deploy", "-c", "docker_compose.yml", "storeapp1:latest"], "delta": "0:00:00.027846", "end": "2019-08-27 20:00:44.626050", "msg": "non-zero return code", "rc": 1, "start": "2019-08-27 20:00:44.598204", "stderr": "yaml: line 16: did not find expected key", "stderr_lines": ["yaml: line 16: did not find expected key"], "stdout": "", "stdout_lines": []}
+2019-08-27 20:00:44,652 p=9143 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 20:00:44,653 p=9143 u=osgdev |  PLAY RECAP ***********************************************************************************************************************************
+2019-08-27 20:00:44,653 p=9143 u=osgdev |  localhost                  : ok=3    changed=2    unreachable=0    failed=1   
+2019-08-27 20:04:33,122 p=14688 u=osgdev |  PLAY [Deploying and monitoring the web-application] ******************************************************************************************
+2019-08-27 20:04:33,169 p=14688 u=osgdev |  TASK [Gathering Facts] ***********************************************************************************************************************
+2019-08-27 20:04:34,444 p=14688 u=osgdev |  ok: [localhost]
+2019-08-27 20:04:34,455 p=14688 u=osgdev |  TASK [Get latest Artifact] *******************************************************************************************************************
+2019-08-27 20:04:35,408 p=14688 u=osgdev |  changed: [localhost]
+2019-08-27 20:04:35,425 p=14688 u=osgdev |  TASK [Create the docker image] ***************************************************************************************************************
+2019-08-27 20:04:39,274 p=14688 u=osgdev |  changed: [localhost]
+2019-08-27 20:04:39,287 p=14688 u=osgdev |  TASK [Build the image] ***********************************************************************************************************************
+2019-08-27 20:04:39,721 p=14688 u=osgdev |  fatal: [localhost]: FAILED! => {"changed": true, "cmd": ["docker", "stack", "deploy", "-c", "docker_compose.yml", "storeapp1:latest"], "delta": "0:00:00.042105", "end": "2019-08-27 20:04:39.699738", "msg": "non-zero return code", "rc": 1, "start": "2019-08-27 20:04:39.657633", "stderr": "yaml: line 16: did not find expected key", "stderr_lines": ["yaml: line 16: did not find expected key"], "stdout": "", "stdout_lines": []}
+2019-08-27 20:04:39,727 p=14688 u=osgdev |  	to retry, use: --limit @/home/osgdev/Desktop/capstoneTest/build/ansible_deploy.retry
+
+2019-08-27 20:04:39,728 p=14688 u=osgdev |  PLAY RECAP ***********************************************************************************************************************************
+2019-08-27 20:04:39,728 p=14688 u=osgdev |  localhost                  : ok=3    changed=2    unreachable=0    failed=1   
+2019-09-08 23:31:27,928 p=12309 u=osgdev |  localhost | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-09-08 23:31:29,743 p=12309 u=osgdev |  10.199.8.14 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-09-08 23:31:37,442 p=12309 u=osgdev |  10.199.9.37 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.199.9.37 port 22: Connection timed out\r\n", 
+    "unreachable": true
+}

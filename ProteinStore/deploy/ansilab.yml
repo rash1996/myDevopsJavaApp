@@ -1,0 +1,44 @@
+- name: Deploying and monitoring the web-application  
+  hosts: localhost
+  tasks:
+  - name: Get latest Artifact
+    shell: "./getArtifact.sh"
+  - name: Create docker image from Dockerfile
+    command: docker build -t storeapp:latest .
+  - name: ProteinStore web container
+    docker_container:
+      name: ProteinStore
+      image: storeapp:latest
+      state: started
+      ports:
+      - "32795:8080"
+      tty: true
+      detach: true
+
+  - name: cAdvisor monitoring container
+    docker_container:
+      name: cadvisor
+      image: google/cadvisor:latest
+      state: started
+      ports:
+      - "2200:8080"
+      volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+      tty: true
+      detach: true
+
+  - name: Prometheus monitoring system container
+    docker_container:
+      name: prometheus
+      image: prom/prometheus:latest
+      state: started
+      ports:
+      - "9090:9090"
+      volumes:
+      - /etc/prometheus:/etc/prometheus
+      tty: true
+      detach: true 

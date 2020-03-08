@@ -1,0 +1,6 @@
+[local] 
+localhost ansible_connection=local ansible_user=osgdev ansible_pass=osg@1234
+
+[remote]
+10.199.9.37 ansible_connection=ssh ansible_user=osgdev ansible_pass=osg@1234
+10.199.8.14 ansible_connection=ssh ansible_user=osgdev ansible_pass=osg@1234
